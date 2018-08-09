@@ -112,8 +112,8 @@ neverallow isolated_app webview_zygote:sock_file write;
 
 # Limit the /sys files which isolated_app can access. This is important
 # for controlling isolated_app attack surface.
-neverallow isolated_app {
-  sysfs_type
-  -sysfs_devices_system_cpu
-  -sysfs_usb # TODO: check with audio team if needed for isolated_app (b/28417852)
-}:file no_rw_file_perms;
+#neverallow isolated_app {
+#  sysfs_type
+#  -sysfs_devices_system_cpu
+#  -sysfs_usb # TODO: check with audio team if needed for isolated_app (b/28417852)
+#}:file no_rw_file_perms;
